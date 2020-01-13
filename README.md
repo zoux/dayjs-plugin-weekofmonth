@@ -45,3 +45,8 @@ dayjs().weekMapOfMonth()
 //   ...
 // }
 ```
+
+
+## todo
+
+1. .ts 中使用时，dayjs 下没有定义插件所带来的 api 类型。(可暂时用 `// @ts-ignore` 规避，同时欢迎提供解决方案)
