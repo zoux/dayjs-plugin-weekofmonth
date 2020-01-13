@@ -1,0 +1,52 @@
+{
+  "name": "@zouxin/dayjs-plugin-weekofmonth",
+  "version": "1.0.0",
+  "description": "一个 dayjs 插件，用于获取当前时间为当前月中的第几周。",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ],
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && rollup -c ./build/rollup.config.js --environment TARGET:prod",
+    "release": "sh build/release.sh"
+  },
+  "dependencies": {
+    "dayjs": "^1.8.19"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "core-js": "^2.6.9",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.17.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.0.3",
+    "rollup-plugin-typescript2": "^0.21.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoux/dayjs-plugin-weekofmonth.git"
+  },
+  "keywords": [
+    "dayjs",
+    "weekofmonth",
+    "dayjs-plugin-weekofmonth"
+  ],
+  "author": "zoux",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoux/dayjs-plugin-weekofmonth/issues"
+  },
+  "homepage": "https://github.com/zoux/dayjs-plugin-weekofmonth#readme"
+}
